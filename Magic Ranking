@@ -31,24 +31,24 @@ class Codechef
 	{
 		// your code goes here
 		Scanner sc= new Scanner(System.in);
-        int T = sc.nextInt();
-        double R = 0;
-        for(int t = 0; t < T; t++)
-        {
-            int n = sc.nextInt();
-            double[][] Rank = new double[n][n];
-            for(int i = 0; i < n; i++)
-            {
-                for(int j = 0; j < n; j++)
-                {
-                    Rank[i][j] = sc.nextInt();;
-                }
-            }
-            R = Maxrank(Rank);
-            if(R < 0)
-                System.out.println("Bad Judges");
-            else
-                System.out.println(R / (2 * n - 3));
-        }
+	        int T = sc.nextInt();
+	        double R = 0;
+	        for(int t = 0; t < T; t++)
+	        {
+	            int n = sc.nextInt();
+	            double[][] Rank = new double[n][n];
+	            for(int i = 0; i < n; i++)
+	            {
+	                for(int j = 0; j < n; j++)
+	                {
+	                    Rank[i][j] = sc.nextInt();;
+	                }
+	            }
+	            R = Maxrank(Rank);
+	            if(R < 0)
+	                System.out.println("Bad Judges");
+	            else
+	                System.out.println(R / (2 * n - 3));
+	        }
 	}
 }
